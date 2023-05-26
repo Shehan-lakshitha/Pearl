@@ -14,7 +14,7 @@ To see UI of this web application <a href='https://www.figma.com/file/MWAtnF7IUG
     &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
     &nbsp;&nbsp;&nbsp;▪️Thenushan<br>
 💠Back-End designers<br>
-   &nbsp;&nbsp;&nbsp;▪️Dilini Shashikala<br>
+   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Dilini-Shashikala-Gnanarathne>Dilini Shashikala</a><br>
    &nbsp;&nbsp;&nbsp;▪️Sammi Chamodi<br>
    &nbsp;&nbsp;&nbsp;▪️Manesha Malalgoda<br>
 
