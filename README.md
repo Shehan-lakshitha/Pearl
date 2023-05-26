@@ -9,7 +9,10 @@ To see UI of this web application <a href='https://www.figma.com/file/MWAtnF7IUG
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/UGPPKumara>Prasanna Pushpakumara</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Gsathsarani>Gothnima Sathsarani</a><br>
-   
 💠Front-End designers<br>
     &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Shehan-Lakshitha>Shehan Lakashitha</a><br>
+    &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
+💠Back-End designers<br>
+   &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
+
 
