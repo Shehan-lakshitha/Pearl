@@ -1,0 +1,20 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+.logo img{
+    width: 30%;
+}
+
+.menu{
+    margin-bottom: 0;
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+}

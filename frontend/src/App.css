@@ -42,9 +42,9 @@ ul {
 }
 
 .primary__btn {
-  background: var(--secondary-color) !important;
+  background: var(--primary-color) !important;
   border: none !important;
-  border-radius: 50px !important;
+  border-radius: 10px !important;
   padding: 0.4rem 1.5rem !important;
 }
 
@@ -58,8 +58,9 @@ ul {
 }
 .secondary__btn {
   background: transparent !important;
-  color: #0b2727 !important;
-  border: none !important;
+  color: var(--primary-color) !important;
+  border: 10px var(--primary-color) solid;
+  border-radius: 10px;
   font-weight: 500 !important;
 }
 
