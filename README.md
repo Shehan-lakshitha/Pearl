@@ -1,4 +1,7 @@
-# ![image](https://github.com/Shehan-lakshitha/Pearl/assets/90453471/f96df73c-bcd4-497f-ac06-97fb935ec552)
+<p align=center>
+   <img src="https://github.com/Shehan-lakshitha/Pearl/assets/90453471/f96df73c-bcd4-497f-ac06-97fb935ec552"
+</p> 
+   
 ## A Full-stack tour management MERN web application.
 This web application is built for the university group project using MERN technologies
 ## UI preview
