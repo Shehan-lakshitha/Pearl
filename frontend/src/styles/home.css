@@ -8,3 +8,19 @@
     font-size: 1.1rem;
     line-height: 2rem;
 }
+.hero_img-box img, .hero_img-box video{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.hero_Content{
+    padding-top: 3.5rem;
+}
+.hero_img-box{
+    padding-top: 2rem;
+}
+section{
+    background-image: url(./../assets/images/homeback.jpg);
+    background-size: 100%;
+}
