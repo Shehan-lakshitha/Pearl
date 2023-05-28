@@ -3,6 +3,7 @@
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    color: white;
 }
 .hero_Content p{
     font-size: 1.1rem;
@@ -16,6 +17,7 @@
 }
 .hero_Content{
     padding-top: 3.5rem;
+    color: white;
 }
 .hero_img-box{
     padding-top: 2rem;
