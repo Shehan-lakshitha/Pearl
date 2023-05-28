@@ -18,3 +18,20 @@
     font-size: 1.1rem;
     border: none;
 }
+.nav_item a:hover{
+    color: inherit;
+}
+.nav_item a.active_link{
+    color: var(--secondary-color);
+}
+.sticky_header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #eee;
+    z-index: 999;
+}

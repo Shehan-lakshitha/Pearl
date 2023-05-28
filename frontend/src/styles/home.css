@@ -1,0 +1,10 @@
+.hero_Content h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.hero_Content p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
