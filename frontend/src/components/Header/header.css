@@ -24,6 +24,11 @@
 .nav_item a.active_link{
     color: var(--secondary-color);
 }
+.mobile_menu{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
 .sticky_header{
     width: 100%;
     height: 80px;
