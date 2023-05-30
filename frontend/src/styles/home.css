@@ -22,7 +22,7 @@
 .hero_img-box{
     padding-top: 2rem;
 }
-section{
+.hero{
     background-image: url(./../assets/images/homeback.jpg);
     background-size: 100%;
 }

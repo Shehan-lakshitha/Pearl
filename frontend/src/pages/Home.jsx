@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
     {/* hero section start */}
-      <section>
+      <section className="hero">
         <Container>
           <Row>
             <Col lg='6'>
@@ -45,6 +45,17 @@ const Home = () => {
         </Container>
       </section>
       {/* hero section end */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='3'>
+              <h5 className="services_subtitle">What we serve</h5>
+              <h2 className="service_title">We offer our best services</h2>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 }
