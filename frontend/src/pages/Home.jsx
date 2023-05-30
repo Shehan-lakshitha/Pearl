@@ -73,16 +73,57 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg='12' className="mb-5">
+            <Col lg="12" className="mb-5">
               <h5 className="subtitle">Explore</h5>
               <h2 className="featured_tour-title">Our featured tours</h2>
             </Col>
-            <FeaturedTourList/>
+            <FeaturedTourList />
           </Row>
         </Container>
       </section>
 
       {/* Featured tours start */}
+
+      {/* Experience section start */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience_content">
+                <h5 className="subtitle">Exprience</h5>
+                <h2>
+                  With our all Experience
+                  <br /> we will serve you
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                  <br />
+                  sed diam nonummy nibh euismod tincidunt ut <br/> laoreet dolore
+                  magna aliquam erat
+                </p>
+              </div>
+
+              <div className="counter_wrapper d-flex align-items-center gap-5">
+                <div className="counter_box">
+                  <span>12K+</span>
+                  <h6>Successful Trips</h6>
+                </div>
+                <div className="counter_box">
+                  <span>2K+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter_box">
+                  <span>15+</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Experience section end */}
     </>
   );
 };
