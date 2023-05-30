@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
 
+import './tour-card.css';
+
 const TourCard = ({tour}) => {
   const { id, title, city, photo, price, featured, avgRating, reviews } = tour
   return (
@@ -11,9 +13,8 @@ const TourCard = ({tour}) => {
           <img src={photo} alt="tour-img" />
           <span>Featured</span>
         </div>
-      </Card>
 
-      <CardBody>
+        <CardBody>
         <div className="card_top d-flex align-items-center justify-content-between">
           <span className="tour_location d-flex align-items-center gap-1">
             <i class="ri-map-pin-fill"></i> {city}
@@ -38,6 +39,9 @@ const TourCard = ({tour}) => {
           </button>
         </div>
       </CardBody>
+      </Card>
+
+    
     </div>
   );
 };
