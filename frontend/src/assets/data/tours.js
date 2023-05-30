@@ -9,8 +9,8 @@ import tourImg07 from "../images/tour-img07.jpg";
 const tours = [
   {
     id: "01",
-    title: "Westminister Bridge",
-    city: "London",
+    title: "Sigiriya",
+    city: "Dambulla",
     distance: 300,
     price: 99,
     maxGroupSize: 10,
@@ -20,6 +20,10 @@ const tours = [
         name: "jhon doe",
         rating: 4.6,
       },
+      {
+        name: "jhon doe",
+        rating: 5,
+      },
     ],
     avgRating: 4.5,
     photo: tourImg01,
@@ -27,8 +31,8 @@ const tours = [
   },
   {
     id: "02",
-    title: "Bali, Indonesia",
-    city: "Indonesia",
+    title: "Yala National park",
+    city: "Kataragama",
     distance: 400,
     price: 99,
     maxGroupSize: 8,
@@ -45,8 +49,8 @@ const tours = [
   },
   {
     id: "03",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Ella",
+    city: "Ella",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -63,8 +67,8 @@ const tours = [
   },
   {
     id: "04",
-    title: "Beautiful Sunrise, Thailand",
-    city: "Thailand",
+    title: "Sigiriya",
+    city: "Dambulla",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -81,8 +85,8 @@ const tours = [
   },
   {
     id: "05",
-    title: "Nusa Pendia Bali, Indonesia",
-    city: "Indonesia",
+    title: "Kandy Lake",
+    city: "Kandy",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -99,8 +103,8 @@ const tours = [
   },
   {
     id: "06",
-    title: "Cherry Blossoms Spring",
-    city: "Japan",
+    title: "Galaboda Waterfall",
+    city: "Galaboda",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -117,17 +121,14 @@ const tours = [
   },
   {
     id: "07",
-    title: "Holmen Lofoten",
-    city: "France",
+    title: "Unawatuna Beach",
+    city: "Galle",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
-      {
-        name: "jhon doe",
-        rating: 4.6,
-      },
+      
     ],
     avgRating: 4.5,
     photo: tourImg07,
@@ -135,17 +136,14 @@ const tours = [
   },
   {
     id: "08",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Ruwanwalisaya",
+    city: "Anuradhapura",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
-      {
-        name: "jhon doe",
-        rating: 4.6,
-      },
+      
     ],
     avgRating: 4.5,
     photo: tourImg03,
