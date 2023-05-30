@@ -11,6 +11,8 @@ import Subtitle from "./../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+
 const Home = () => {
   return (
     <>
@@ -59,13 +61,28 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="3">
-              <h5 className="services_subtitle">What we serve</h5>
+              <h5 className="subtitle">What we serve</h5>
               <h2 className="service_title">We offer our best services</h2>
             </Col>
             <ServiceList />
           </Row>
         </Container>
       </section>
+
+      {/* Featured tours start */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12' className="mb-5">
+              <h5 className="subtitle">Explore</h5>
+              <h2 className="featured_tour-title">Our featured tours</h2>
+            </Col>
+            <FeaturedTourList/>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Featured tours start */}
     </>
   );
 };

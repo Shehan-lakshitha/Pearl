@@ -27,13 +27,18 @@
     background-size: 100%;
 }
 
-.services_subtitle{
+.subtitle{
     font-size: 2.2rem;
     font-weight: 500;
     color: var(--secondary-color);
     font-family: var(--subtitle-font-name);
 }
 .service_title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.featured_tour-title{
     font-size: 2.5rem;
     font-weight: 500;
 }
