@@ -6,7 +6,10 @@ import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
+
+
 import Subtitle from "./../shared/Subtitle";
+
 
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
@@ -119,11 +122,33 @@ const Home = () => {
                 </div>
               </div>
             </Col>
+            <Col lg='6'>
+              <div className="experience_img">
+                {/* TODO Need to images */}
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
 
       {/* Experience section end */}
+
+      {/* Gallery section start */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12'>
+            <h5 className="subtitle">Gallery</h5>
+            <h2 className="gallery_title">Visit our customers tour gallery</h2>
+            </Col>
+            <Col lg='12'>
+              
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Gallery section start */}
     </>
   );
 };
