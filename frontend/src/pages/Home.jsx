@@ -7,14 +7,13 @@ import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
 
-
 import Subtitle from "./../shared/Subtitle";
-
 
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/image-gallery/MasonryImagesGallery";
+import Testimonials from "../components/Testimonial/Testimonials";
 
 const Home = () => {
   return (
@@ -102,8 +101,8 @@ const Home = () => {
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                   <br />
-                  sed diam nonummy nibh euismod tincidunt ut <br/> laoreet dolore
-                  magna aliquam erat
+                  sed diam nonummy nibh euismod tincidunt ut <br /> laoreet
+                  dolore magna aliquam erat
                 </p>
               </div>
 
@@ -122,10 +121,8 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg='6'>
-              <div className="experience_img">
-                {/* TODO Need to images */}
-              </div>
+            <Col lg="6">
+              <div className="experience_img">{/* TODO Need to images */}</div>
             </Col>
           </Row>
         </Container>
@@ -137,12 +134,14 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg='12'>
-            <h5 className="subtitle">Gallery</h5>
-            <h2 className="gallery_title">Visit our customers tour gallery</h2>
+            <Col lg="12">
+              <h5 className="subtitle">Gallery</h5>
+              <h2 className="gallery_title">
+                Visit our customers tour gallery
+              </h2>
             </Col>
-            <Col lg='12'>
-              <MasonryImagesGallery/>
+            <Col lg="12">
+              <MasonryImagesGallery />
             </Col>
           </Row>
         </Container>
@@ -154,12 +153,12 @@ const Home = () => {
 
       <section>
         <Container>
+          <Col lg="12">
+            <h5 className="subtitle">Fans Love</h5>
+            <h2 className="testimonial_title">What our fans say about us</h2>
+          </Col>
           <Col lg='12'>
-          <h5 className="subtitle">Fans Love</h5>
-          <h2 className="testimonial_title">What our fans say about us</h2>
-          {/* TODo Need to add the testimonial */}
-
-          
+            <Testimonials />
           </Col>
         </Container>
       </section>
