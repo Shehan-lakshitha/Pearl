@@ -37,7 +37,7 @@ const quick_links2 =[
 ]
 
 const Footer = () => {
-  return 
+  return (
   <footer className="footer">
     <Container>
       <Row>
@@ -65,6 +65,7 @@ const Footer = () => {
       </Row>
     </Container>
   </footer>
+  );
 }
 
 export default Footer
