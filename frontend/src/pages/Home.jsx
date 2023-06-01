@@ -19,7 +19,7 @@ import Newsletter from "../shared/Newsletter";
 const Home = () => {
   return (
     <>
-      {/* hero section start */}
+      {/* hero section start  */}
       <section className="hero">
         <Container>
           <Row>
