@@ -37,10 +37,10 @@ const Login = () => {
                 </div>
                 <h2>Login</h2>
 
-                <Form onClick={handleClick}> 
+                <Form onSubmit={handleClick}> 
                   <FormGroup>
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Email"
                       required
                       id="email"
