@@ -14,8 +14,9 @@
 }
 
 .login_container{
-    box-shadow: rgba(17, 12, 46, 0.15);
+    box-shadow: rgba(17, 12, 46, 0.15) !important;
     margin-top: 100px;
+    border-radius: 10px;
 }
 .login_form .user{
     width: 80px;
@@ -30,7 +31,50 @@
     width: 100%;
 }
 .login_form h2{
-    color: #fff;
+    color: #000;
     text-align: center;
     margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.login_form{
+    width: 40%;
+}
+
+.login_form input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background: #D9D9D9;
+    font-size: 1rem;
+    color: var(--header-color);
+}
+
+.login_form input:focus{
+    outline: none;
+}
+
+.btn_login{
+    background: var(--heading-color) !important;
+    width: 100% !important;
+    border-radius: 20px !important;
+    padding: 0.5rem 1rem !important;
+    color: #fff;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+}
+
+.login_form p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.login_form p a{
+    color: var(--heading-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
 }
