@@ -123,7 +123,7 @@ const Home = () => {
               </div>
             </Col>
             <Col lg="6">
-              <div className="experience_img">{/* TODO Need to images */}</div>
+              <div className="experience_img">{/* TODO Need to add images */}</div>
             </Col>
           </Row>
         </Container>
