@@ -17,7 +17,7 @@ To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF
     &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Shehan-Lakshitha>Shehan Lakashitha</a><br>
     &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
     &nbsp;&nbsp;&nbsp;▪️Thenushan<br>
-💠Back-End designers<br>
+💠Back-End developers<br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Dilini-Shashikala-Gnanarathne>Dilini Shashikala</a><br>
    &nbsp;&nbsp;&nbsp;▪️Sammi Chamodi<br>
    &nbsp;&nbsp;&nbsp;▪️Manesha Malalgoda<br>
