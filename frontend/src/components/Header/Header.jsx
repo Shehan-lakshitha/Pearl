@@ -67,8 +67,8 @@ const Header = () => {
           {/* Nav bar start */}
           <div className="nav_right d-flex align-items-center gap-4">
             <div className="nav_btns d-flex align-items-center gap-4">
-              <Button className="btn secondary__btn"><Link to='./login'>Sign-Up</Link></Button>
-              <Button className="btn primary__btn"><Link to='./register'>Login</Link></Button>
+              <Button className="btn secondary__btn"><Link to='./login'>Login</Link></Button>
+              <Button className="btn primary__btn"><Link to='./register'>Sign Up</Link></Button>
             </div>
 
             <span className="mobile_menu">

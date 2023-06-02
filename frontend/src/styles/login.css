@@ -1,0 +1,36 @@
+.login_img{
+    width: 60%;
+    text-align: center;
+}
+.login_img img{
+    width: 70%;
+    object-fit: contain;
+}
+
+.login_form{
+    padding: 50px;
+    background: #F0F0F9;
+    position: relative;
+}
+
+.login_container{
+    box-shadow: rgba(17, 12, 46, 0.15);
+    margin-top: 100px;
+}
+.login_form .user{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -9%;
+    left: 40%;
+    transform: translateX(-50%, -9%);
+}
+
+.login_form .user img{
+    width: 100%;
+}
+.login_form h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
