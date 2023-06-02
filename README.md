@@ -13,7 +13,7 @@ To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Gsathsarani>Gothnima Sathsarani</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/morty167>Amila Madushanka</a><br>
-💠Front-End designers<br>
+💠Front-End developers<br>
     &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Shehan-Lakshitha>Shehan Lakashitha</a><br>
     &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
     &nbsp;&nbsp;&nbsp;▪️Thenushan<br>
