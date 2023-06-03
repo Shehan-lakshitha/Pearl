@@ -4,6 +4,7 @@ import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
 import tourData from "../assets/data/tours";
 import calculateAvgRating from "../utils/avgRating";
+import avatar from "../assets/images/avatar.jpg";
 
 const TourDetails = () => {
   const { id } = useParams();
@@ -23,6 +24,8 @@ const TourDetails = () => {
   } = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
+
+  const options = { day: "numeric", month: "long", year: "numeric" };
 
   return (
     <>
@@ -61,10 +64,14 @@ const TourDetails = () => {
                       <i class="ri-map-pin-fill"></i> {city}
                     </span>
                     <span>
-                      <i class="ri-money-dollar-circle-fill"></i> $ {price}
+                      <i class="ri-money-dollar-circle-fill"></i> $ {price} /
+                      per person
                     </span>
                     <span>
-                      <i class="ri-group-2-fill"></i> {maxGroupSize}
+                      <i class="ri-pin-distance-fill"></i> {distance} km
+                    </span>
+                    <span>
+                      <i class="ri-group-2-fill"></i> {maxGroupSize} people
                     </span>
                   </div>
                   <h5>Description</h5>
@@ -97,9 +104,40 @@ const TourDetails = () => {
 
                     <div className="review_input">
                       <input type="text" placeholder="Share your thoughts" />
-                      <button className="btn primary__btn text-white" type="submit">Submit</button>
+                      <button
+                        className="btn primary__btn text-white"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
                     </div>
                   </Form>
+
+                  <ListGroup className="user_review">
+                    {reviews?.map((review) => (
+                      <div className="review_item">
+                        <img src={avatar} alt="" />
+
+                        <div className="w-100">
+                          <div className="d-flex align-items-center justify-content-between">
+                            <div>
+                              <h5>Shehan</h5>
+                              <p>
+                                {new Date("03-06-2023").toLocaleDateString(
+                                  "en-US",
+                                  options
+                                )}
+                              </p>
+                            </div>
+                            <span className="d-flex align-items-center">
+                              5 <i class="ri-star-s-fill"></i>
+                            </span>
+                          </div>
+                          <h6>Ammazing tours</h6>
+                        </div>
+                      </div>
+                    ))}
+                  </ListGroup>
                 </div>
                 {/* tour review section end */}
               </div>

@@ -83,3 +83,46 @@
 .review_input input:focus{
     outline: none;
 }
+
+.review_item{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.review_item img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_review{
+    margin-top: 2rem;
+}
+
+.review_item h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.review_item p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.review_item h6{
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.review_item span i{
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.review_item span{
+    font-weight: 500;
+}
