@@ -70,6 +70,38 @@ const TourDetails = () => {
                   <h5>Description</h5>
                   <p>{desc}</p>
                 </div>
+
+                {/* tour review section start */}
+
+                <div className="tour_reviews mt-4">
+                  <h4>Reviews ({reviews?.length} reviews)</h4>
+
+                  <Form>
+                    <div className="d-flex align-items-center gap-3 mb-4 rating_group">
+                      <span>
+                        1 <i class="ri-star-s-fill"></i>
+                      </span>
+                      <span>
+                        2 <i class="ri-star-s-fill"></i>
+                      </span>
+                      <span>
+                        3 <i class="ri-star-s-fill"></i>
+                      </span>
+                      <span>
+                        4 <i class="ri-star-s-fill"></i>
+                      </span>
+                      <span>
+                        5 <i class="ri-star-s-fill"></i>
+                      </span>
+                    </div>
+
+                    <div className="review_input">
+                      <input type="text" placeholder="Share your thoughts" />
+                      <button className="btn primary__btn text-white" type="submit">Submit</button>
+                    </div>
+                  </Form>
+                </div>
+                {/* tour review section end */}
               </div>
             </Col>
           </Row>
