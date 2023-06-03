@@ -10,10 +10,19 @@ const TourDetails = () => {
 
   const tour = tourData.find((tour) => tour.id === id);
 
-  const { photo, title, desc, price, address, reviews, city, distance, maxGroupSize } =
-    tour;
+  const {
+    photo,
+    title,
+    desc,
+    price,
+    address,
+    reviews,
+    city,
+    distance,
+    maxGroupSize,
+  } = tour;
 
-  const {totalRating, avgRating} = calculateAvgRating(reviews);
+  const { totalRating, avgRating } = calculateAvgRating(reviews);
 
   return (
     <>
@@ -29,7 +38,10 @@ const TourDetails = () => {
 
                   <div className="d-flex align-items-center gap-5">
                     <span className="tour_rating d-flex align-items-center gap-1">
-                      <i class="ri-star-fill" style={{"color":"var(--primary-color)"}}></i>{" "}
+                      <i
+                        class="ri-star-fill"
+                        style={{ color: "var(--primary-color)" }}
+                      ></i>{" "}
                       {calculateAvgRating === 0 ? null : avgRating}
                       {totalRating === 0 ? (
                         "Not rated"
@@ -39,9 +51,24 @@ const TourDetails = () => {
                     </span>
 
                     <span>
-                    <i class="ri-map-pin-fill"></i>{address}
+                      <i class="ri-map-pin-user-fill"></i>
+                      {address}
                     </span>
                   </div>
+
+                  <div className="tour_extra-details">
+                    <span>
+                      <i class="ri-map-pin-fill"></i> {city}
+                    </span>
+                    <span>
+                      <i class="ri-money-dollar-circle-fill"></i> $ {price}
+                    </span>
+                    <span>
+                      <i class="ri-group-2-fill"></i> {maxGroupSize}
+                    </span>
+                  </div>
+                  <h5>Description</h5>
+                  <p>{desc}</p>
                 </div>
               </div>
             </Col>

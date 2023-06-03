@@ -15,7 +15,7 @@ const tours = [
     address: "Sigiriya, Dambulla, Sri Lanka",
     price: 99,
     maxGroupSize: 10,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -38,7 +38,7 @@ const tours = [
     address: "Yala National park, Kataragama, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -57,7 +57,7 @@ const tours = [
     address: "Ella, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -76,7 +76,7 @@ const tours = [
     address: "Sigiriya, Dambulla, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -95,7 +95,7 @@ const tours = [
     address: "Kandy Lake, Kandy, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -114,7 +114,7 @@ const tours = [
     address: "Galaboda Waterfall, Galaboda, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -133,7 +133,7 @@ const tours = [
     address: "Unawatuna Beach, Galle, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       
     ],
@@ -149,7 +149,7 @@ const tours = [
     address: "Ruwanwalisaya, Anuradhapura, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       
     ],
