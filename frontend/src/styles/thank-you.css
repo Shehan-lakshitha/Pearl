@@ -1,0 +1,12 @@
+
+
+.thank_you{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.thank_you h1{
+    font-size: 4rem;
+    font-family: var(--subtitle-font-name);
+    color: var(--secondary-color);
+}
