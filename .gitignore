@@ -2,4 +2,5 @@
 /frontend/node_modules
 /frontend/build
 /frontend/.firebase
-/frontend/.firebase.json
+/frontend/firebase.json
+/frontend/.firebaserc
