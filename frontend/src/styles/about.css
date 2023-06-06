@@ -1,0 +1,60 @@
+.AboutUs {
+  background: linear-gradient(rgba(57, 114, 220, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../assets/images/about.jpg") no-repeat center center;
+  height: 300px;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 650px;
+  padding-top: 4rem;
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.slider{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.slider h2 {
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.team_Name{
+    align-items: center;
+    justify-content: center;
+}
+
+h6 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+

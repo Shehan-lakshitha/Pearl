@@ -97,3 +97,8 @@
     margin-bottom: 2.5rem;
     margin-top: 1rem;
 }
+
+.testimonial h6{
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
