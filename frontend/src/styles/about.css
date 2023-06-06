@@ -58,3 +58,31 @@ h6 {
 }
 
 
+.ContactUs h1{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 650;
+    margin-bottom: 4rem;
+}
+
+.ContactUs h1 i{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.ContactUs h2{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.ContactUs p{
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
