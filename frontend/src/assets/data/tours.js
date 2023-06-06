@@ -12,9 +12,10 @@ const tours = [
     title: "Sigiriya",
     city: "Dambulla",
     distance: 300,
+    address: "Sigiriya, Dambulla, Sri Lanka",
     price: 99,
     maxGroupSize: 10,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -34,9 +35,10 @@ const tours = [
     title: "Yala National park",
     city: "Kataragama",
     distance: 400,
+    address: "Yala National park, Kataragama, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -52,9 +54,10 @@ const tours = [
     title: "Ella",
     city: "Ella",
     distance: 500,
+    address: "Ella, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -70,9 +73,10 @@ const tours = [
     title: "Sigiriya",
     city: "Dambulla",
     distance: 500,
+    address: "Sigiriya, Dambulla, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -88,9 +92,10 @@ const tours = [
     title: "Kandy Lake",
     city: "Kandy",
     distance: 500,
+    address: "Kandy Lake, Kandy, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -106,9 +111,10 @@ const tours = [
     title: "Galaboda Waterfall",
     city: "Galaboda",
     distance: 500,
+    address: "Galaboda Waterfall, Galaboda, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       {
         name: "jhon doe",
@@ -124,9 +130,10 @@ const tours = [
     title: "Unawatuna Beach",
     city: "Galle",
     distance: 500,
+    address: "Unawatuna Beach, Galle, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       
     ],
@@ -139,9 +146,10 @@ const tours = [
     title: "Ruwanwalisaya",
     city: "Anuradhapura",
     distance: 500,
+    address: "Ruwanwalisaya, Anuradhapura, Sri Lanka",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     reviews: [
       
     ],
