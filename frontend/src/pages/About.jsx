@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Form, FormGroup } from "reactstrap";
+import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "../styles/about.css";
 import Team from "../components/Team/Team";
 
@@ -110,7 +110,7 @@ const About = () => {
                   <FormGroup className="message">
                     <input
                       type="message"
-                      placeholder="Message"
+                      placeholder="Any question? Notes?"
                       id="message"
                       required
                     />
@@ -120,6 +120,7 @@ const About = () => {
                       <option value="Country">Country</option>
                     </select>
                   </FormGroup>
+                  <Button className="btn primary__btn w-100 mb-1 mt-4" >Send</Button>
                 </Form>
               </div>
             </Col>
