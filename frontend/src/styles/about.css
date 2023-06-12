@@ -86,3 +86,27 @@ h6 {
     margin-top: 1rem;
     margin-left: 2rem;
 }
+
+.ContactUs_form{
+  padding: 1rem;
+}
+
+.ContactUs_form input,
+.ContactUs_form select{
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 600;
+}
+
+.ContactUs_form input:focus{
+  outline: none;
+}
+
+.ContactUs_form .message input{
+  height: 280px;
+}
