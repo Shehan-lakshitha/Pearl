@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Form, FormGroup } from "reactstrap";
+import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import "../styles/about.css";
 import Team from "../components/Team/Team";
 
@@ -39,18 +39,19 @@ const About = () => {
       <section className="ContactUs">
         <Container>
           <Row>
-            <h1><i class="ri-edit-2-fill"></i>Let's start a conversation</h1>
+            <h1>
+              <i class="ri-edit-2-fill"></i>Let's start a conversation
+            </h1>
             <Col lg="6">
               <div className="ContactUs_content">
                 <h2>Ask how we can help you ...</h2>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
                   commodi voluptatem autem magnam blanditiis tempora!
-                
-                <br/>
+                  <br />
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
                   commodi voluptatem autem magnam blanditiis tempora!
-                  <br/>
+                  <br />
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
 
@@ -68,14 +69,66 @@ const About = () => {
                 <p>Phone: +94 77 123 4567</p>
 
                 <h2>Privacy Information</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste ab! Consectetur fugit possimus, dolorem facere et laboriosam molestiae ut aliquam corporis animi quasi asperiores architecto doloremque ipsa, consequatur quas.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, iste ab! Consectetur fugit possimus, dolorem facere
+                  et laboriosam molestiae ut aliquam corporis animi quasi
+                  asperiores architecto doloremque ipsa, consequatur quas.
+                </p>
               </div>
             </Col>
+            {/* Contact us section end */}
+
+            {/* Contact form start */}
+            <Col lg="6">
+              <div className="ContactUs_form">
+                <Form className="ContactUs_Info">
+                  <FormGroup>
+                    <input
+                      type="text"
+                      placeholder="Fist Name"
+                      id="firstName"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      id="lastName"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      id="email"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup className="message">
+                    <input
+                      type="message"
+                      placeholder="Any question? Notes?"
+                      id="message"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup className="country">
+                    <select className="countryList">
+                      <option value="Country">Country</option>
+                    </select>
+                  </FormGroup>
+                  <Button className="btn primary__btn w-100 mb-1 mt-4" >Send</Button>
+                </Form>
+              </div>
+            </Col>
+
+            {/* Contact form end */}
           </Row>
         </Container>
       </section>
-
-      {/* Contact us section end */}
     </>
   );
 };
