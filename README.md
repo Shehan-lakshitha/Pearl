@@ -13,7 +13,6 @@ To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF
 <ul>
 💠UI designers<br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/UGPPKumara>Prasanna Pushpakumara</a><br>
-   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Gsathsarani>Gothnima Sathsarani</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/morty167>Amila Madushanka</a><br>
 💠Front-End developers<br>
@@ -22,6 +21,7 @@ To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF
     &nbsp;&nbsp;&nbsp;▪️Thenushan<br>
 💠Back-End developers<br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Dilini-Shashikala-Gnanarathne>Dilini Shashikala</a><br>
+   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
    &nbsp;&nbsp;&nbsp;▪️Sammi Chamodi<br>
    &nbsp;&nbsp;&nbsp;▪️Manesha Malalgoda<br>
 </ul>
