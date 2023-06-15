@@ -23,7 +23,7 @@ To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Dilini-Shashikala-Gnanarathne>Dilini Shashikala</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
    &nbsp;&nbsp;&nbsp;▪️Sammi Chamodi<br>
-   &nbsp;&nbsp;&nbsp;▪️Manesha Malalgoda<br>
+   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Manesha-99>Manesha Malalgoda</a><br>
 </ul>
 
 ## Vist App
