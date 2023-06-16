@@ -32,5 +32,5 @@ To vist the app <a href=https://pearl-4c5dd.web.app>Click here </a>
 ## Installation 
 To get a local copy up and running, just clone the repo
 ```
-https://github.com/Shehan-lakshitha/Pearl
+https://github.com/Shehan-lakshitha/Pearl.git
 ```
