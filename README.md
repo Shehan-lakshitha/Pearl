@@ -26,13 +26,11 @@ This web application is a comprehensive platform for tour operators to manage an
 ## UI preview
 To see the UI of this web application <a href='https://www.figma.com/file/MWAtnF7IUG9oLpnxI89QuR/PEARL---UI-DESIGN?type=design&node-id=2%3A4&t=y480D5tSiPJhhKxi-1'>click here</a>
 
-## Installation 
-To get a local copy
-
-
-
-
-
-
 ## Vist App
-   To vist the app <a href=https://pearl-4c5dd.web.app>Click here </a>
+To vist the app <a href=https://pearl-4c5dd.web.app>Click here </a>
+
+## Installation 
+To get a local copy up and running, just clone the repo
+```
+https://github.com/Shehan-lakshitha/Pearl
+```
