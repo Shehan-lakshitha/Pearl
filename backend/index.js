@@ -27,7 +27,7 @@ const connect = async()=>
 }
 //FOR TESTING
 app.get("/",(req,res)=>{
-    res.send("api is workind");
+    res.send("api is working");
 });
 
 app.use(express.json());
