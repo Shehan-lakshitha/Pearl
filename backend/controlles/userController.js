@@ -1,7 +1,7 @@
 import User from '../models/User.js'
 //create new User
 export const createUser = async(req,res)=>{
-    const newUser=new User(req.body)
+    const newUser=new User(req.body);
     try {
         const savedUser= await newUser.save();
         res
@@ -11,7 +11,7 @@ export const createUser = async(req,res)=>{
             message:"Successfully created",
             data: savedUser,
         });
-    } catch (error) {
+    } catch (err) {
         res
         .status(500)
         .json({success:false,message:"Failed to create. Try again"});
@@ -59,18 +59,18 @@ export const deleteUser=async(req,res)=>{
 }
 //getSingleUser
 export const getSingleUser=async(req,res)=>{
-    const id = req.params.id
+    const id = req.params.id;
     try {
-        const user= await User.findById(id)
+        const user= await User.findById(id);
         res
         .status(200)
         .json({
             success:true,
-            message:"Successfully deleted",
+            message:"Successful",
             data:user,
         });
 
-    } catch (error) {
+    } catch (err) {
         res
         .status(404)
         .json({success:false,message:"Not found"});
@@ -78,7 +78,7 @@ export const getSingleUser=async(req,res)=>{
 }
 //getAllUser
 export const getAllUser=async(req,res)=>{
-   console.log(page);
+   //console.log(page);
     try {
         const users= await User.find({})
        
@@ -90,7 +90,7 @@ export const getAllUser=async(req,res)=>{
             data:users,
         });
 
-    } catch (error) {
+    } catch (err) {
         res
         .status(404)
         .json({success:false,message:"Not found"});

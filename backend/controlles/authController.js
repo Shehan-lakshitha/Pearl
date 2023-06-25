@@ -10,7 +10,7 @@ export const register=async(req,res)=>{
       const newUser= new User({
         username:req.body.username,
         email:req.body.email,
-        password:req.body.password,
+        password:hash,
         photo:req.body.photo,
       })  
       await newUser.save();
@@ -19,9 +19,9 @@ export const register=async(req,res)=>{
       .json({
           success:true,
           message:"Successfully created",
-          data: savedTour,
+         // data: savedTour,
       });
-  } catch (error) {
+  } catch (err) {
       res
       .status(500)
       .json({success:false,message:"Failed to create. Try again"});
@@ -29,14 +29,17 @@ export const register=async(req,res)=>{
 }
 
 export const login=async(req,res)=>{
+  const email=req.body.email;
     try {
       const user=await User.findOne({email})
       //if user doesnt exist
       if(!user){
-        return res.status(404).json({success:false,message:"User not found"})
+        return res.status(404).json({
+          success:false,message:"User not found"})
       }  
       //if user is exist then check the pasword or compare
-      const checkCorrectPassword=bcrypt.compare(req.body.password,user.password)
+      const checkCorrectPassword=await bcrypt.compare(
+        req.body.password,user.password)
       //if password incorrect
       if(!checkCorrectPassword){
         return res.status(401)
@@ -46,7 +49,7 @@ export const login=async(req,res)=>{
       //create jwt token
       const token=jwt.sign(
         {
-            id:user._id,role:role.role,
+            id:user._id,role:user.role
         },
         process.env.JWT_SECRET_KEY,{expiresIn:"15d"}
       );
@@ -55,8 +58,12 @@ export const login=async(req,res)=>{
         httpOnly:true,
         expires:token.expiresIn,
       })
-      .status(200).json({success:true,message:"successfully login",
+      .status(200).json({
+        token,
+       // success:true,message:"successfully login",
     data:{...rest},
+    role,
+
     });
 
 
