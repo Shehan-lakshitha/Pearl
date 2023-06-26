@@ -11,7 +11,7 @@ This web application is a comprehensive platform for tour operators to manage an
 💠UI designers<br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/UGPPKumara>Prasanna Pushpakumara</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Gsathsarani>Gothnima Sathsarani</a><br>
-   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/morty167>Amila Madushanka</a><br>
+   &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/madhusankha90>Amila Madushanka</a><br>
 💠Front-End developers<br>
     &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Shehan-Lakshitha>Shehan Lakashitha</a><br>
     &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
