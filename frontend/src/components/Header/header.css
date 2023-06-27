@@ -57,7 +57,7 @@
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.408);
-        z-index: 999;
+        z-index: 999; 
         display: none;
     }
 
@@ -78,10 +78,18 @@
         display: block;
     }
 
-
-
     .mobile_menu{
         display: block;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .logo img {
+        width: 45%;
+    }
+
+    .menu {
+        width: calc(100% - 50%);
     }
 }
    

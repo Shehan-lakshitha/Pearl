@@ -1,4 +1,4 @@
-.hero_Content h1{
+ .hero_Content h1{
     font-size: 3.2rem;
     font-weight: 700;
     margin-top: 1rem;
@@ -101,4 +101,44 @@
 .testimonial h6{
     font-size: 1.1rem;
     color: var(--text-color);
+}
+
+
+@media only screen and (max-width: 992px){
+    .hero_Content h1{
+      font-size: 2.7rem;  
+    }
+
+    .hero_img-box {
+        display: none;
+    }
+
+    .hero_video-box{
+        display: block;
+    }
+
+    .service_title, 
+    .featured_tour-title,
+    .gallery_title, 
+    .testimonial_title, .experience_content h2{
+       font-size: 2rem; 
+    }
+
+    .experience_img{
+       margin-top: 2rem; 
+    } 
+}
+
+@media only screen and (max-width: 576px){
+    .hero_Content h1 {
+        font-size: 1.8rem;
+    }
+
+    .service_title, 
+    .featured_tour-title, 
+    .gallery_title, 
+    .testimonial_title, 
+    .experience_content h2 {
+        font-size: 1.5rem;
+    }
 }

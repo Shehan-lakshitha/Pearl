@@ -78,3 +78,30 @@
     font-weight: 600;
     margin-left: 5px;
 }
+
+
+@media only screen and (max-width: 768px){
+    .login_img{
+        display: none;
+    }
+
+    .login_form{
+        width: 70%;
+        margin: auto;
+    }
+
+    .login_container {
+        padding-bottom: 3rem;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .login_form{
+        width: 100%;
+    }
+
+    .login_container {
+        padding-bottom: 1rem;
+    }
+}

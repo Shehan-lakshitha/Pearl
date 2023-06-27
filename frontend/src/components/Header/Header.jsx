@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useContext} from 'react'
 import { Container, Row, Button} from 'reactstrap';
 import {NavLink, Link} from 'react-router-dom';
 
@@ -8,21 +8,29 @@ import "./header.css";
 const nav_links =[
   {
     path:'/home',
-    display:'Home'
+    display:'Home',
   },
   {
     path:'/about',
-    display:'About'
+    display:'About',
   },
   {
     path:'/tours',
-    display:'Tours'
+    display:'Tours',
   },
-]
+];
 
 const Header = () => {
-
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
+  const navigate = useNavigate();
+  const { user, dispatch } = useContext(AuthContext);
+
+  const logout = () => {
+    dispatch({ type: "LOGOUT" });
+    navigate
+  };
+
 
   const stickyHeaderFunc = () => {
     window.addEventListener('scroll', () =>{
@@ -37,9 +45,12 @@ const Header = () => {
   useEffect(() =>{
     stickyHeaderFunc()
 
-    return window.removeEventListener('scroll',stickyHeaderFunc)
-  })
+    return window.removeEventListener('scroll',stickyHeaderFunc);
+  });
 
+  const toggleMenu = ()=> menuRef.current.classList.toggle('show_menu')
+  
+  
   return <header className="header" ref={headerRef}>
     <Container>
       <Row>
@@ -52,7 +63,7 @@ const Header = () => {
           {/* logo end */}
 
           {/* Nav bar start */}
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu d-flex align-items-center gap-5">
               {
                 nav_links.map((item, index) => (
@@ -71,7 +82,7 @@ const Header = () => {
               <Button className="btn primary__btn"><Link to='./register'>Sign Up</Link></Button>
             </div>
 
-            <span className="mobile_menu">
+            <span className="mobile_menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>
             </span>
           </div>
