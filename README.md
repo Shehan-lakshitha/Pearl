@@ -15,7 +15,7 @@ This web application is a comprehensive platform for tour operators to manage an
 💠Front-End developers<br>
     &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Shehan-Lakshitha>Shehan Lakashitha</a><br>
     &nbsp;&nbsp;&nbsp;▪️Gamika Malalgoda<br>
-    &nbsp;&nbsp;&nbsp;▪️Thenushan<br>
+    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/ThenushanThev>Thenushan</a><br>
 💠Back-End developers<br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Dilini-Shashikala-Gnanarathne>Dilini Shashikala</a><br>
    &nbsp;&nbsp;&nbsp;▪️<a href=https://github.com/Amagunarathna>Amanda Gunarathna</a><br>
