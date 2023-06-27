@@ -5,7 +5,7 @@ import express from 'express'
 const router = express.Router();
 
 //create new tour
-router.post('/',verifyAdmin,createTour);
+router.post('/',/*verifyAdmin,*/createTour);
  //update tour
  router.put('/:id',verifyAdmin,updateTour);
 // //delete tour 

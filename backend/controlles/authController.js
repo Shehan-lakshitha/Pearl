@@ -60,7 +60,7 @@ export const login=async(req,res)=>{
       })
       .status(200).json({
         token,
-       // success:true,message:"successfully login",
+      // success:true,message:"successfully login",
     data:{...rest},
     role,
 
