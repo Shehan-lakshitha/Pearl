@@ -40,3 +40,48 @@
     box-shadow: 3px 3px 8px -3px #eee;
     z-index: 999;
 }
+
+
+
+/*________responsive_______ */
+
+@media only screen and (max-width:992px) {
+    .logo img{
+        width: 20%;
+    }
+
+    .navigatin{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.408);
+        z-index: 999;
+        display: none;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 75%);
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        line-height: 0.5rem;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .show_menu{
+        display: block;
+    }
+
+
+
+    .mobile_menu{
+        display: block;
+    }
+}
+   
