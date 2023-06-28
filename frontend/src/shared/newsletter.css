@@ -44,3 +44,27 @@
     color: var(--heading-color);
     font-size: 1.1rem;
 }
+
+
+@media only screen and (max-width:992px){
+    .newsletter_content h2 {
+        font-size: 2rem;
+    }
+    
+    .newsletter_img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .newsletter_content h2{
+        font-size: 1.5rem;
+    }
+
+    
+    .newsletter_content p {
+        display: none;
+    }
+}
+
+    
