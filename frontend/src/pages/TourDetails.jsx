@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState,useContext } from "react";
 import "../styles/tour-details.css";
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
@@ -8,11 +8,14 @@ import avatar from "../assets/images/avatar.jpg";
 import Booking from "../components/Booking/Booking";
 import Newsletter from "../shared/Newsletter";
 import useFetch from "../books/useFetch";
+import {BASE_URL} from "./../context/AuthContext";
+import { AuthContext } from "./../context/AuthContext";
 
 const TourDetails = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef("");
   const [tourRating, setTourRating] = useState(null);
+  const {user} = useContext(AuthContext)
 
   //fetch data from database
   const {data:tour,loading,error}= useFetch('${BASE_URL}/tours/$(id)');
@@ -37,9 +40,35 @@ const TourDetails = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
+try{
+    if (!user || user  ){
 
-    alert(`${reviewText}, ${tourRating}`); //need to remove this after implementing the backend
-  };
+    alert(`${reviewText}, ${tourRating}`)} //need to remove this after implementing the backend
+  
+    const reviewobj = {
+      username : user.username,
+      reviewText,
+      rating: tourRating
+    }
+
+    const res = await fetch('${BASE_URL}/review/${id}',{
+      method: 'post',
+      Headers:{
+        'content-type': 'application/json'
+      },
+      credentials: 'include',
+      body.JSON.stringify(reviewobj)
+    })
+
+    const result = await res.json()
+    alert(result.message)
+
+  } catch(err){
+    alert(err.message);
+  }
+
+};
+  
   useEffect(()=>{
     window.scrollTo(0,0)
   },[tour]);
