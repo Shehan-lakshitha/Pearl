@@ -10,7 +10,7 @@ import userIcon from "../assets/images/user.png";
 import { AuthContext} from "./../context/AuthContext";
 import {BASE_URL} from './../utils/config';
 
-const Register = () => {
+const Register = async () => {
   const [credentials, setCredentials] = useState({
     username: undefined,
     email: undefined,
@@ -29,7 +29,7 @@ const navigate = useNavigate()
   };
 
   try {
-    const res = await fetch('${BASE_URL}/auth/register',{
+    const res = await fetch(`${BASE_URL}/auth/register`,{
       method: 'post' , 
       headers:{
         'content-type' : 'application/json'

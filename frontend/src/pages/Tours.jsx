@@ -7,9 +7,8 @@ import TourCard from "../shared/TourCard";
 import SearchBar from "../shared/SearchBar";
 import Newsletter from "../shared/Newsletter";
 
-
 import { Col, Container, Row } from "reactstrap";
-import useFetch from "../books/useFetch";
+import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 
 const Tours = () => {
@@ -17,17 +16,17 @@ const Tours = () => {
   const [page, setPage] = useState(0);
 
   const {
-    data:tours,
+    data: tours,
     loading,
-    error
-  } = useFetch('${BASE_URL}/tours?page=${page}');
-  const {data:tourCount} = useFetch('${BASE_URL}/tours/search/getTourCount');
+    error,
+  } = useFetch("${BASE_URL}/tours?page=${page}");
+  const { data: tourCount } = useFetch("${BASE_URL}/tours/search/getTourCount");
 
   useEffect(() => {
-    const pages = Math.ceil(tourCount/ 8); 
+    const pages = Math.ceil(tourCount / 8);
     setPageCount(pages);
-    window.scrollTo(0,0)
-  }, [page,tourCount,tours]);
+    window.scrollTo(0, 0);
+  }, [page, tourCount, tours]);
 
   return (
     <>
@@ -41,34 +40,35 @@ const Tours = () => {
       </section>
       <section className="pt-0">
         <Container>
-          {loading &&<h4 className="text-center pt-5">Loading......</h4>}
-          {error &&<h4 className="text-center pt-5">{error}</h4>}
+          {loading && <h4 className="text-center pt-5">Loading......</h4>}
+          {error && <h4 className="text-center pt-5">{error}</h4>}
           {!loading && !error && (
-          <Row>
-              {tours ?.map(tour=>(
-                <Col lg='3' className="mb-4" key={tour._id}>
-                  <TourCard tour={tour}/>
+            <Row>
+              {tours?.map((tour) => (
+                <Col lg="3" className="mb-4" key={tour._id}>
+                  <TourCard tour={tour} />
                 </Col>
               ))}
               <Col lg="12">
                 <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
-                  {[...Array(pageCount).keys()].map(number=>(
+                  {[...Array(pageCount).keys()].map((number) => (
                     <span
-                    key={number}
-                    onClick={()=>setPage(number)}
-                    className={page==number? "active_page": ""}
+                      key={number}
+                      onClick={() => setPage(number)}
+                      className={page == number ? "active_page" : ""}
                     >
-                      {number+1}
+                      {number + 1}
                     </span>
                   ))}
                 </div>
-                </Col>
-          }
+              </Col>
+            </Row>
+          )}
         </Container>
       </section>
       <Newsletter />
     </>
-    );
-        };
+  );
+};
 
 export default Tours;

@@ -4,7 +4,7 @@ import {NavLink, Link,useNavigate} from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
 import "./header.css";
-import {Authcontext} from "./../../context/AuthContext";
+import { AuthContext } from '../../context/AuthContext';
 
 const nav_links =[
   {
@@ -24,8 +24,8 @@ const nav_links =[
 const Header = () => {
 
   const headerRef = useRef(null);
-  const navigate = useNavigate()
-  const {user,dispatch} = useContext(Authcontext)
+  const navigate = useNavigate();
+  const {user,dispatch} = useContext(AuthContext);
 
   const logout = ()=>{
     dispatch({type:'LOGOUT'})

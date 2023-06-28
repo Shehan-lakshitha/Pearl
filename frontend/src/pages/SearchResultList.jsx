@@ -16,7 +16,7 @@ const SearchResultList = () => {
   
   return (
     <>
-    <CommonSection tittle={'All tours'}/>
+    <CommonSection tittle={"Tour Search Result"}/>
     <section>
      <Container>
       <Row>
