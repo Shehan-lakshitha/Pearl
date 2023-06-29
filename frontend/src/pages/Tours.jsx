@@ -19,8 +19,8 @@ const Tours = () => {
     data: tours,
     loading,
     error,
-  } = useFetch("${BASE_URL}/tours?page=${page}");
-  const { data: tourCount } = useFetch("${BASE_URL}/tours/search/getTourCount");
+  } = useFetch(`${BASE_URL}/tours?page=${page}`);
+  const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
   useEffect(() => {
     const pages = Math.ceil(tourCount / 8);
@@ -42,11 +42,11 @@ const Tours = () => {
         <Container>
           {loading && <h4 className="text-center pt-5">Loading......</h4>}
           {error && <h4 className="text-center pt-5">{error}</h4>}
-          {!loading && !error && (
-          <Row>
-              {tours ?.map(tour=>(
+
+          {!loading && !error && <Row>
+              {tours?.map((tour) => (
                 <Col lg="3" md="6" sm="6" className="mb-4" key={tour._id}>
-                  <TourCard tour={tour}/>
+                  <TourCard tour={tour} />
                 </Col>
               ))}
               <Col lg="12">
@@ -63,7 +63,7 @@ const Tours = () => {
                 </div>
               </Col>
             </Row>
-          )}
+          }
         </Container>
       </section>
       <Newsletter />

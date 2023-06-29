@@ -41,10 +41,10 @@ const navigate = useNavigate()
     if(!res.ok) alert(result.message)
 
     dispatch({type:'REGISTER_SUCESS'})
-    navigate('/login')
+    navigate('/login');
     
   } catch (err) {
-    alert(err.message)
+    alert(err.message);
     
   }
 
