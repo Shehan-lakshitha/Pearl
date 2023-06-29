@@ -1,6 +1,8 @@
 import React from "react";
 import TourCard from "../../shared/TourCard";
 
+import loadingGif from "../../assets/images/loading.gif";
+
 import { Col } from "reactstrap";
 import useFetch from "../../hooks/useFetch";
 import { BASE_URL } from "../../utils/config";
@@ -13,7 +15,7 @@ const FeaturedTourList = () => {
     
   return (
     <>
-      {loading &&  <h4>Loading..........</h4>}
+      {loading &&  <video src={loadingGif}/>}
 
       {error &&  <h4>{error}</h4>}
 

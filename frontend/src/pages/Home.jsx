@@ -43,7 +43,7 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero_img-box hero_video-box mt-4">
-                <video src={heroVideo} alt="" controls />
+                <video src={heroVideo} autoPlay loop muted />
               </div>
             </Col>
             <Col lg="2">
