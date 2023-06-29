@@ -1,8 +1,8 @@
 [
   {
-    "title": "Westminister Bridge",
-    "city": "London",
-    "address": "Somewhere in London",
+    "title": "Sigiriya",
+    "city": "Dambulla",
+    "address": "Sigiriya, Dambulla, Sri Lanka",
     "distance": 300,
     "price": 99,
     "maxGroupSize": 10,
@@ -13,9 +13,9 @@
     "featured": true
   },
   {
-    "title": "Bali, Indonesia",
-    "city": "Bali",
-    "address": "Somewhere in Indonesia",
+    "title": "Yala National park",
+    "city": "Katharagama",
+    "address": "Yala National park, Kataragama, Sri Lanka",
     "distance": 400,
     "price": 99,
     "maxGroupSize": 8,
@@ -26,9 +26,9 @@
     "featured": true
   },
   {
-    "title": "Snowy Mountains, Thailand",
-    "city": "Bangkok",
-    "address": "Somewhere in Thailand",
+    "title": "Ella",
+    "city": "Ella",
+    "address": "Ella, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -39,9 +39,9 @@
     "featured": true
   },
   {
-    "title": "Beautiful Sunrise, Thailand",
-    "city": "Phuket",
-    "address": "Somewhere in Thailand",
+    "title": "Kandy Lake",
+    "city": "Kandy",
+    "address": "Kandy Lake, Kandy, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -52,9 +52,9 @@
     "featured": true
   },
   {
-    "title": "Nusa Pendia Bali, Indonesia",
-    "city": "Bali",
-    "address": "Somewhere in Indonesia",
+    "title": "Galaboda Waterfall",
+    "city": "Galaboda",
+    "address": "Galaboda Waterfall, Galaboda, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -65,9 +65,9 @@
     "featured": true
   },
   {
-    "title": "Cherry Blossoms Spring",
-    "city": "Tokyo",
-    "address": "Somewhere in Japan",
+    "title": "Unawatuna Beach",
+    "city": "Galle",
+    "address": "Unawatuna Beach, Galle, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -78,9 +78,9 @@
     "featured": true
   },
   {
-    "title": "Holmen Lofoten, France",
-    "city": "Paris",
-    "address": "Somewhere in France",
+    "title": "Ruwanwalisaya",
+    "city": "Anuradhapura",
+    "address": "Ruwanwalisaya, Anuradhapura, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -91,9 +91,9 @@
     "featured": true
   },
   {
-    "title": "Snowy Mountains, Thailand",
-    "city": "Bangkok",
-    "address": "Somewhere in Thailand",
+    "title": "Sigiriya",
+    "city": "Dambulla",
+    "address": "Sigiriya, Dambulla, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,
@@ -104,9 +104,9 @@
     "featured": true
   },
   {
-    "title": "Jaflong, Sylhet",
-    "city": "Sylhet",
-    "address": "Somewhere in Sylhet",
+    "title": "Yala National park",
+    "city": "Katharagama",
+    "address": "Yala National park, Kataragama, Sri Lanka",
     "distance": 100,
     "price": 99,
     "maxGroupSize": 5,
@@ -117,9 +117,9 @@
     "featured": false
   },
   {
-    "title": "Cox's Bazar Sea Beach",
-    "city": "Chittagong",
-    "address": "Somewhere in Chittagong",
+    "title": "Ella",
+    "city": "Ella",
+    "address": "Ella, Sri Lanka",
     "distance": 500,
     "price": 99,
     "maxGroupSize": 8,

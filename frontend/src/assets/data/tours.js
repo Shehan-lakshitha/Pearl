@@ -33,7 +33,7 @@ const tours = [
   {
     id: "02",
     title: "Yala National park",
-    city: "Kataragama",
+    city: "Katharagama",
     distance: 400,
     address: "Yala National park, Kataragama, Sri Lanka",
     price: 99,
