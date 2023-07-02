@@ -10,14 +10,14 @@ import mongoose from 'mongoose'
  import bookingRoute from './routes/booking.js'
 
 
-dotenv.config()
+dotenv.config();
 
 
-const app=express()
+const app=express();
 const port =process.env.PORT || 8000;
 const corsOptions={
     origin:true,
-    credential:true,
+    credentials:true,
 }
 // database connection
 mongoose.set("strictQuery",false);
@@ -33,10 +33,10 @@ const connect = async()=>
         console.log("MongoDB database not connected");
     }
 }
-//FOR TESTING
-app.get("/",(req,res)=>{
-    res.send("api is working");
-});
+// //FOR TESTING
+// app.get("/",(req,res)=>{
+//     res.send("api is working");
+// });
 
 app.use(express.json());
 app.use(cors(corsOptions));
@@ -50,5 +50,5 @@ app.use(cors(corsOptions));
 app.listen(port,()=>
 {
     connect();
-    console.log("dilini",port);
+    console.log("Server listing on port",port);
 })
