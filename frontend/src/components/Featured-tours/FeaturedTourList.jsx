@@ -8,24 +8,25 @@ import useFetch from "../../hooks/useFetch";
 import { BASE_URL } from "../../utils/config";
 
 const FeaturedTourList = () => {
+  const {
+    data: featuredTours,
+    loading,
+    error,
+  } = useFetch(`${BASE_URL}/tours/search/getFeaturedTours`);
 
-  const{data:featuredTours,loading,error}= useFetch(
-    `${BASE_URL}/tours/search/getFeaturedTours`
-    );
-    
   return (
     <>
-      {loading &&  <video src={loadingGif}/>}
+      {loading && <video src={loadingGif} />}
 
-      {error &&  <h4>{error}</h4>}
+      {error && <h4>{error}</h4>}
 
-      {!loading && 
-        !error && 
+      {!loading &&
+        !error &&
         featuredTours?.map((tour) => (
           <Col lg="3" md="6" sm="6" className="mb-4" key={tour._id}>
-          <TourCard tour={tour} />
-        </Col>
-      ))}
+            <TourCard tour={tour} />
+          </Col>
+        ))}
     </>
   );
 };
