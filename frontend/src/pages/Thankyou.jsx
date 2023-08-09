@@ -11,7 +11,7 @@ const Thankyou = () => {
           <Col lg="12 pt-5 text-center">
             <div className="thank_you">
               <span>
-                <i class="ri-checkbox-circle-fill"></i>
+                <i className="ri-checkbox-circle-fill"></i>
               </span>
               <h1 className="mb-3 fw-semibold">Thank You</h1>
               <h3 className="mb-4">Your trip is booked.</h3>

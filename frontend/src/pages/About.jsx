@@ -40,7 +40,7 @@ const About = () => {
         <Container>
           <Row>
             <h1>
-              <i class="ri-edit-2-fill"></i>Let's start a conversation
+              <i className="ri-edit-2-fill"></i>Let's start a conversation
             </h1>
             <Col lg="6">
               <div className="ContactUs_content">

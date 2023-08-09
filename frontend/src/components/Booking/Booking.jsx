@@ -17,18 +17,19 @@ const Booking = ({ tour, avgRating }) => {
   });
 
   const handleChange = (e) => {
-    setCredentials(prev => ({...prev, [e.target.id]: e.target.value}))
+    setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
   const serviceFee = 10;
-  const totalAmount = Number(price) * Number(credentials.guestsSize) + serviceFee;
+  const totalAmount =
+    Number(price) * Number(credentials.guestsSize) + serviceFee;
 
   //send data to server
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.preventDefault();
 
     navigate("/thank-you");
-  }
+  };
 
   return (
     <div className="booking">
@@ -37,7 +38,7 @@ const Booking = ({ tour, avgRating }) => {
           ${price} <span>/per person</span>
         </h3>
         <span className="tour_rating d-flex align-items-center">
-          <i class="ri-star-fill"></i> {avgRating === 0 ? null : avgRating} (
+          <i className="ri-star-fill"></i> {avgRating === 0 ? null : avgRating} (
           {reviews?.length} )
         </span>
       </div>
@@ -92,7 +93,7 @@ const Booking = ({ tour, avgRating }) => {
         <ListGroup>
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1">
-              ${price} <i class="ri-close-fill"></i> 1 person{" "}
+              ${price} <i className="ri-close-fill"></i> 1 person{" "}
             </h5>
             <span>${price}</span>
           </ListGroupItem>
@@ -106,7 +107,12 @@ const Booking = ({ tour, avgRating }) => {
           </ListGroupItem>
         </ListGroup>
 
-        <Button className="btn primary__btn w-100 mb-1 mt-4" onClick={handleClick}>Book Now</Button>
+        <Button
+          className="btn primary__btn w-100 mb-1 mt-4"
+          onClick={handleClick}
+        >
+          Book Now
+        </Button>
       </div>
     </div>
   );
