@@ -5,6 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
+import experienceImg from "../assets/images/experience.png"
 
 
 import SearchBar from "../shared/SearchBar";
@@ -121,7 +122,9 @@ const Home = () => {
               </div>
             </Col>
             <Col lg="6">
-              <div className="experience_img">{/* TODO Need to add images */}</div>
+              <div className="experience_img">
+                <img src={experienceImg} />
+              </div>
             </Col>
           </Row>
         </Container>

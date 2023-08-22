@@ -40,20 +40,21 @@ const TourDetails = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
+
     try {
       if (!user || user) {
         alert(`${reviewText}, ${tourRating}`);
-      } //need to remove this after implementing the backend
+      }
 
       const reviewobj = {
-        username: user.username,
+        username: user?.username,
         reviewText,
         rating: tourRating,
       };
 
       const res = await fetch(`${BASE_URL}/review/${id}`, {
         method: "post",
-        Headers: {
+        headers: {
           "content-type": "application/json",
         },
         credentials: "include",
@@ -62,7 +63,10 @@ const TourDetails = () => {
       });
 
       const result = await res.json();
-      alert(result.message);
+      if (!res.ok){
+        alert(result.message);
+      }
+      alert(result.message)
     } catch (err) {
       alert(err.message);
     }
@@ -112,14 +116,15 @@ const TourDetails = () => {
                         <i className="ri-map-pin-fill"></i> {city}
                       </span>
                       <span>
-                        <i className="ri-money-dollar-circle-fill"></i> $ {price} /
-                        per person
+                        <i className="ri-money-dollar-circle-fill"></i> ${" "}
+                        {price} / per person
                       </span>
                       <span>
                         <i className="ri-pin-distance-fill"></i> {distance} km
                       </span>
                       <span>
-                        <i className="ri-group-2-fill"></i> {maxGroupSize} people
+                        <i className="ri-group-2-fill"></i> {maxGroupSize}{" "}
+                        people
                       </span>
                     </div>
                     <h5>Description</h5>
@@ -167,26 +172,26 @@ const TourDetails = () => {
                     </Form>
 
                     <ListGroup className="user_review">
-                      {reviews?.map((review) => (
+                      {reviews?.map((reviews) => (
                         <div className="review_item">
                           <img src={avatar} alt="" />
 
                           <div className="w-100">
                             <div className="d-flex align-items-center justify-content-between">
                               <div>
-                                <h5>Shehan</h5>
+                                <h5>{reviews.username}</h5>
                                 <p>
-                                  {new Date("03-06-2023").toLocaleDateString(
+                                  {new Date(reviews.createdAt).toLocaleDateString(
                                     "en-US",
                                     options
                                   )}
                                 </p>
                               </div>
                               <span className="d-flex align-items-center">
-                                5 <i className="ri-star-s-fill"></i>
+                                {reviews.rating} <i className="ri-star-s-fill"></i>
                               </span>
                             </div>
-                            <h6>Ammazing tours</h6>
+                            <h6>{reviews.reviewText}</h6>
                           </div>
                         </div>
                       ))}
