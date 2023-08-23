@@ -10,7 +10,7 @@ import userIcon from "../assets/images/user.png";
 import { AuthContext } from "./../context/AuthContext";
 import { BASE_URL } from "./../utils/config";
 
-const Register = async () => {
+export default function Register () {
   const [credentials, setCredentials] = useState({
     username: undefined,
     email: undefined,
@@ -106,4 +106,4 @@ const Register = async () => {
   );
 };
 
-export default Register;
+

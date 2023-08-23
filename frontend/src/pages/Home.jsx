@@ -99,10 +99,9 @@ const Home = () => {
                   <br /> we will serve you
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                Discover the Jewel of the Indian Ocean with Our Unforgettable Sri Lanka Adventures!,
                   <br />
-                  sed diam nonummy nibh euismod tincidunt ut <br /> laoreet
-                  dolore magna aliquam erat
+                  Immerse Yourself in Rich Culture, Pristine Beaches, and Breathtaking Landscapes. Book Your Journey Today and Let the Island Magic Begin!
                 </p>
               </div>
 

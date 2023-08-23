@@ -11,7 +11,7 @@ import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
 
-const TourDetails = () => {
+export default function TourDetails () {
   const { id } = useParams();
   const reviewMsgRef = useRef("");
   const [tourRating, setTourRating] = useState(null);
@@ -30,7 +30,7 @@ const TourDetails = () => {
     city,
     distance,
     maxGroupSize,
-  } = tour;
+  } = tour || {};
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
@@ -52,7 +52,7 @@ const TourDetails = () => {
         rating: tourRating,
       };
 
-      const res = await fetch(`${BASE_URL}/review/${id}`, {
+      const res = await fetch(`${BASE_URL}/reviews/${id}`, {
         method: "post",
         headers: {
           "content-type": "application/json",
@@ -212,4 +212,4 @@ const TourDetails = () => {
   );
 };
 
-export default TourDetails;
+
