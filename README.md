@@ -3,6 +3,12 @@
 </p> 
    
 ## A Full-stack tour management MERN web application.
+![Static Badge](https://img.shields.io/badge/react-blue) ![Static Badge](https://img.shields.io/badge/mongodb-green) ![Static Badge](https://img.shields.io/badge/express-yellow) ![Static Badge](https://img.shields.io/badge/nodejs-green)
+
+
+ </br>
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Shehan-lakshitha/Pearl) </br>
+
 This is a web application is built for the university group project using MERN technologies.
 This web application is a comprehensive platform for tour operators to manage and organize tours. It offers features such as tour package creation, itinerary customization, and pricing management. Customers can search for and book tours based on their preferences. The application also includes features like user authentication, advanced search and filtering for enhanced user experience. Additionally, it provides a review and rating system for customers to share their feedback. Overall, this application simplifies tour management processes and improves the booking experience for both tour operators and customers. And also, customers get better experience of their future trip.
      
